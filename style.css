@@ -71,6 +71,7 @@ nav {
     right: 5%;
     top: 50%;
     transform: translate(-5%, -50%);
+    z-index: 2;
   }
 
   .nav-links {
@@ -81,12 +82,14 @@ nav {
     clip-path: circle(100px at 90% -10%);
     -webkit-clip-path: circle(100px at 90% -10%);
     transition: all 1s ease-in-out;
+    pointer-events: none;
   }
 
   /*open class that will animate hamburger when JS initiates*/
   .nav-links.open {
     clip-path: circle(1000px at 90% -10%);
     -webkit-clip-path: circle(1000px at 90% -10%);
+    pointer-events: all;
   }
 
 
@@ -94,6 +97,7 @@ nav {
     flex-direction: column;
   }
   .nav-links li {
+    
   }
   .nav-links li a {
   }
